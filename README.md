@@ -11,6 +11,7 @@ This repository contains the code for:
 - Packing and loading binary topology datasets
 - Training the unconditional diffusion topology model
 - Running generation-based optimisation examples
+- Running a lightweight toy target-matching example in `Generation/F0_TOY`
 - Evaluating task-specific objectives for heat conduction, morphology, elasticity, and vibration transmission
 
 ## Repository Structure
@@ -52,7 +53,30 @@ Generation/models/model_ckpt_pretrained/
 Training/Binary_Image_Packed/
 ```
 
+## Main Requirements
+
+The code was tested with:
+
+```text
+Python 3.11.6
+PyTorch 2.9.1+cu130
+NumPy 2.3.5
+SciPy 1.16.3
+Matplotlib 3.10.6
+scikit-image 0.25.2
+tqdm 4.67.1
+```
+
+PyTorch is the main dependency. A CUDA-enabled PyTorch installation is recommended for generation and training.
+
 ## Quick Start
+
+Run the lightweight toy example:
+
+```bash
+cd Generation/F0_TOY
+python Djob_TOY.py
+```
 
 Train a diffusion model:
 
@@ -80,4 +104,3 @@ Generation/F4_FQ/
 ## Authors
 
 Haolin Li and Yuyang Miao
-
