@@ -48,6 +48,16 @@ They can be downloaded from Google Drive:
 
 https://drive.google.com/drive/folders/1iLriVSi7aBi89xtdFyk8-OWidYB0o3ys?usp=drive_link
 
+They are also archived on Zenodo:
+
+https://doi.org/10.5281/zenodo.20452173
+
+The data/checkpoint archive contains:
+
+- `Binary_Image_Packed`: the full packed topology dataset used for model training.
+- `Binary_Image_Packed_small`: a lightweight sample dataset for quick testing and code verification.
+- `model_ckpt_pretrained`: pretrained diffusion model checkpoints for periodic, four-fold symmetric, and eight-fold symmetric topology priors.
+
 After downloading, place the files in the following folders:
 
 ```text
