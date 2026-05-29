@@ -1,0 +1,23 @@
+{
+  "title": "GenTO: Unified Generative Design of Architected Metamaterials",
+  "creators": [
+    {
+      "name": "Li, Haolin"
+    },
+    {
+      "name": "Miao, Yuyang"
+    },
+    {
+      "name": "Wang, Liyuan"
+    }
+  ],
+  "description": "Generative Topology Optimization Design (GenTO): a diffusion-based framework that learns reusable topology priors from large metamaterial datasets and steers them toward task-specific objectives for thermal, morphology, elasticity, and vibration transmission design.",
+  "keywords": [
+    "architected metamaterials",
+    "topology design",
+    "AI for science",
+    "structural priors",
+    "diffusion models"
+  ],
+  "license": "MIT"
+}
