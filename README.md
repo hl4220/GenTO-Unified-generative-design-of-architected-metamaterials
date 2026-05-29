@@ -1,5 +1,7 @@
 # GenTO-Unified-generative-design-of-architected-metamaterials
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20452109.svg)](https://doi.org/10.5281/zenodo.20452109)
+
 Generative Topology Optimization Design (GenTO): a diffusion-based framework that learns reusable topology priors from large metamaterial datasets and steers them toward task-specific objectives for thermal, morphology, elasticity, and vibration transmission design.
 
 ## Overview
@@ -104,3 +106,11 @@ Generation/F4_FQ/
 ## Authors
 
 Haolin Li and Yuyang Miao
+
+## Citation
+
+If you use this code, please cite the Zenodo record:
+
+```text
+https://doi.org/10.5281/zenodo.20452109
+```
