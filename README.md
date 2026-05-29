@@ -1,2 +1,83 @@
 # GenTO-Unified-generative-design-of-architected-metamaterials
+
 Generative Topology Optimization Design (GenTO): a diffusion-based framework that learns reusable topology priors from large metamaterial datasets and steers them toward task-specific objectives for thermal, morphology, elasticity, and vibration transmission design.
+
+## Overview
+
+GenTO treats topology knowledge as a reusable design prior. A diffusion model is first trained on large 2D metamaterial topology datasets, and the pretrained model is then adapted to different design tasks through iterative generation, evaluation, selection, and fine-tuning. The same pretrained topology prior can be reused across heterogeneous objectives and constraints.
+
+This repository contains the code for:
+
+- Packing and loading binary topology datasets
+- Training the unconditional diffusion topology model
+- Running generation-based optimisation examples
+- Evaluating task-specific objectives for heat conduction, morphology, elasticity, and vibration transmission
+
+## Repository Structure
+
+```text
+.
+├── Training/
+│   ├── train.py
+│   ├── data_aggregation.py
+│   ├── model/
+│   └── Binary_Image_Packed/
+└── Generation/
+    ├── F0_TOY/
+    ├── F1_HE/
+    ├── F2_MO/
+    ├── F3_ES/
+    ├── F4_FQ/
+    └── models/
+```
+
+`Training/` contains dataset loading and diffusion-model training code.
+
+`Generation/` contains pretrained-model-based optimisation examples and task valuers.
+
+Please see the README files inside `Training/` and `Generation/` for folder-specific instructions.
+
+## Checkpoints and Data
+
+Pretrained checkpoints and packed training datasets are not included in this GitHub repository because of file-size limits.
+
+They can be downloaded from Google Drive:
+
+https://drive.google.com/drive/folders/1iLriVSi7aBi89xtdFyk8-OWidYB0o3ys?usp=drive_link
+
+After downloading, place the files in the following folders:
+
+```text
+Generation/models/model_ckpt_pretrained/
+Training/Binary_Image_Packed/
+```
+
+## Quick Start
+
+Train a diffusion model:
+
+```bash
+cd Training
+python train.py
+```
+
+Run a generation example:
+
+```bash
+cd Generation/F1_HE
+python Djob_HE_max.py
+```
+
+Other generation examples are available in:
+
+```text
+Generation/F0_TOY/
+Generation/F2_MO/
+Generation/F3_ES/
+Generation/F4_FQ/
+```
+
+## Authors
+
+Haolin Li and Yuyang Miao
+
