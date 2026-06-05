@@ -1,7 +1,3 @@
-# Authors: Haolin Li, Yuyang Miao
-# Date: 2026-05-29
-# Description: Run the F0 toy target-matching optimisation with the pretrained periodic diffusion model.
-
 import json
 from collections import OrderedDict
 from pathlib import Path
@@ -47,15 +43,15 @@ Diffusion = diffusion_pipeline(model, device).to(device)
 # Experiment settings and output folders
 ###############################################################################
 
-TEST_NUM = 1
+TEST_NUM = 6
 VOLUME_FRACTION = 0.75
 N_ITERATIONS = 100
-NTAKE = 8
+NTAKE = 64
 GEN_BATCH = 16
 TRAIN_BATCH = 16
 PREVIEW_BATCH = 4
-EPOCHS = 1
-LEARNING_RATE = 5e-5
+EPOCHS = 20
+LEARNING_RATE = 1e-5
 EXPLORE_SCALE = 1.0
 SAVE_SAMPLE_PREVIEWS = True
 SAVE_CKPTS = False
