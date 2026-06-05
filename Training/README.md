@@ -1,6 +1,8 @@
 # Training
 
-This folder contains the data-loading and training code for the GenTO diffusion topology prior. The training script reads packed binary topology datasets, converts them into signed-distance-like surface fields, and trains the unconditional diffusion model.
+This folder contains the data-loading and **pretraining** code for the GenTO geometric diffusion topology prior. The training script reads packed binary topology datasets, converts them into signed-distance-function (SDF) fields, and trains the unconditional diffusion model.
+
+The pretrained GenTO checkpoints used in this repository have already been trained and are provided through the download links below. Most users do not need to run pretraining before using the generation examples. This code is released for researchers who want to train a new topology prior on their own geometric datasets, or continue from the provided pretrained prior with additional data for transfer learning.
 
 ## Folder Structure
 
@@ -15,11 +17,15 @@ Training/
     └── eight_fold/                  # Eightfold-symmetric packed datasets
 ```
 
-## Download Training Data
+## Download Training Data and Checkpoints
 
-The packed `.npy` datasets are not included in this GitHub version because of file-size limits. Please download them from Google Drive:
+The packed `.npy` datasets and pretrained checkpoints are not included in this GitHub version because of file-size limits. Please download them from Google Drive:
 
 https://drive.google.com/drive/folders/1iLriVSi7aBi89xtdFyk8-OWidYB0o3ys?usp=drive_link
+
+They are also archived on Zenodo:
+
+https://doi.org/10.5281/zenodo.20452173
 
 Place the packed data files into the corresponding folders:
 
@@ -27,6 +33,12 @@ Place the packed data files into the corresponding folders:
 Training/Binary_Image_Packed/periodic/
 Training/Binary_Image_Packed/four_fold/
 Training/Binary_Image_Packed/eight_fold/
+```
+
+Place the pretrained checkpoint files into:
+
+```text
+Generation/models/model_ckpt_pretrained/
 ```
 
 Expected layout:
@@ -70,4 +82,3 @@ Training checkpoints and sample previews are saved to:
 ```text
 Training/checkpoints_iso_original/
 ```
-
