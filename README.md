@@ -6,8 +6,6 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20452109.svg)](https://doi.org/10.5281/zenodo.20452109)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20452109.svg)](https://doi.org/10.5281/zenodo.20452109)
-
 Generative Topology Optimization Design (GenTO): a diffusion-based framework that learns reusable topology priors from large metamaterial datasets and steers them toward task-specific objectives for thermal, morphology, elasticity, and vibration transmission design.
 
 ## Overview
