@@ -87,7 +87,15 @@ PyTorch is the main dependency. A CUDA-enabled PyTorch installation is recommend
 
 ## Quick Start
 
-Run the lightweight toy example:
+The easiest way to get started is to run the lightweight toy example in `Generation/F0_TOY`.
+
+This toy model demonstrates the core GenTO workflow on a simple target-matching problem: a pretrained toy diffusion model generates binary unit-cell topologies, a short pixel-matching valuer scores how close each candidate is to a target `G` pattern, and the model is iteratively fine-tuned toward better samples. It is designed for quick testing and visualization rather than physical benchmarking.
+
+<p align="center">
+  <img src="assets/gento_toy_G_evolution.gif" alt="GenTO toy G evolution" width="520">
+</p>
+
+Run the toy example:
 
 ```bash
 cd Generation/F0_TOY
