@@ -104,7 +104,7 @@ python Djob_TOY.py
 
 ## Training and Generation Examples
 
-Train a diffusion model:
+Train a prior diffusion model:
 `Training/` contains the dataset loading and **pretraining** code for the geometric diffusion topology prior. The pretrained checkpoints are already provided in the data/checkpoint links below, so most users can directly use the generation examples without retraining the prior.
 
 ```bash
