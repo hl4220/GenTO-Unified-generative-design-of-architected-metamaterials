@@ -102,6 +102,8 @@ cd Generation/F0_TOY
 python Djob_TOY.py
 ```
 
+## Training and Generation Examples
+
 Train a diffusion model:
 
 ```bash
