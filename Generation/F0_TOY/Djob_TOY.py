@@ -43,10 +43,10 @@ Diffusion = diffusion_pipeline(model, device).to(device)
 # Experiment settings and output folders
 ###############################################################################
 
-TEST_NUM = 6
+TEST_NUM = 0
 VOLUME_FRACTION = 0.75
 N_ITERATIONS = 100
-NTAKE = 64
+NTAKE = 32
 GEN_BATCH = 16
 TRAIN_BATCH = 16
 PREVIEW_BATCH = 4
